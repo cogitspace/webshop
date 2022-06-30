@@ -1,0 +1,25 @@
+html body{
+    /* width: 100%;
+    margin: 0%; */
+    font-family: sans-serif , 'Raleway';
+}
+#gpus{
+    width: 7rem;
+}
+
+#homepage{
+    width: 20rem;
+}
+
+.gpus{
+    width : 30%;
+    margin: calc(10%/6);
+    background-color: rgb(212, 211, 211);
+}
+
+nav{
+    border-bottom: 0.1rem solid  #d6d6d6;
+    width: 30%;
+    margin-left: calc(10%/6) ;
+    padding: 1% 0;
+}
