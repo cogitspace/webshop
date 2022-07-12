@@ -1,7 +1,36 @@
 body{
-    background-image: url("../Landing\ Page/Landing Page.png");
+    /* background-image: url("../Landing\ Page/Landing Page.png"); */
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: top left;
     
+    
+    
 }
+
+div{
+    width: 100%; 
+    height: 100%;   
+    /* align-items: center; */
+   transform: translate(75rem , 25rem);
+   
+   
+   
+   
+
+}
+/* section{
+    font-family: sans-serif;
+    width: 35rem;
+    height: 35rem;
+    background-color: transparent;
+    transform: rotate(-22deg);
+    font-size: xx-large;
+    
+    
+}
+
+section:hover{
+    transform: rotate(0deg);
+    display: inline-block;
+} */
