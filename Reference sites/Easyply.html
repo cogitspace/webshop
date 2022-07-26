@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h2 {
+            width: 40%;
+            display: inline-block;
+        }
+
+        div {
+
+            width: 50%;
+        }
+
+        /* #landlord {
+
+            float: left;
+
+        } */
+
+        #tenant {
+
+            float: right;
+
+
+        }
+    </style>
+    <title>Easyply</title>
+</head>
+
+<body>
+    <div id="tenant">
+        <h2>Tenant:</h2>
+        <form action="">
+            <label for="indivbus">Individual / Business:</label>
+            <select required name="" id="indivbus">
+                <option value="" selected>Please select</option>
+                <option value="indsec">Individual</option>
+                <option value="bussec">Business</option>
+            </select>
+            <br><br>
+            <div id="tendet">
+                <h3>Tenant details:</h3>
+                <section id="indsec">
+                    <input type="text" required name="firstname" placeholder="First Name (as per ID)" id="">
+                    <input type="text" required name="lastname" placeholder="Last Name (as per ID)" id="">
+                    <input type="text" required name="idnum" placeholder="ID Number" id="">
+                </section>
+                <section id="bussec">
+                    <input type="text" required name="compname" placeholder="Company Name:" id="">
+                    <input type="text" required name="regnum" placeholder="Registration Number:" id="">
+                    <!-- <input type="text" required name="idnum" placeholder="ID Number" id=""> -->
+                </section>
+            </div>
+
+            <br><br><br><br><br><br><br><br><br>
+            <button type="submit">Submit!</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <!-- <div id="Landlord">
+    <h2>Landlord:</h2>
+    <form action="">
+    <label for="busi"></label>
+    <input type="radio" name="busi" id="">
+    <input type="radio" name="indi2" id="">
+    <input type="text" name="" placeholder="Please enter your first name here" id="">
+    <input type="text" name="" placeholder="Please enter your surname" id="">
+</form>
+</div> -->
+    <script>
+        // document.getElementById("tendet").style.display= "none";
+        document.getElementById("indivbus").onchange = function () {
+
+            if (this.value == "indsec") {
+                alert(this.value);
+                // document.getElementById("tendet").style.display= "inline";
+                // document.getElementById("indsec").style.display = "inline";
+                // document.getElementById("bussec").style.display = "none";
+            }
+            else if (this.value == "bussec") {
+                alert(this.value);
+                // document.getElementById("tendet").style.display= "inline";
+                // document.getElementById("bussec").style.display = "inline";
+                // document.getElementById("indsec").style.display = "none";
+            }
+            else {
+                // document.getElementById("tendet").style.display= "none";
+            }
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
